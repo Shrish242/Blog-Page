@@ -1,0 +1,70 @@
+
+.social{
+    display: flex;
+    gap: 15px;
+    flex: 1;	
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 0;
+    height: 90px;
+}
+
+.links{
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    font-size:17px;
+    align-items: center;
+    
+}
+
+.logo{
+    flex : 1;
+    text-align: center;
+    font-size: 32px;
+    font-weight:900;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1280px){
+    .container{
+        padding: 2px 20px;
+    }
+    .logo{
+        font-size: 30px;
+    }
+    .links{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1180px){
+    .social{
+        display: none;
+    }
+    .logo{
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .logo{
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 640px){
+    .link{
+        display: none;
+    }
+    .links{
+        padding-left: 20%;
+    }
+    .logo{
+        position: relative;
+        right:40px;
+    }
+}
