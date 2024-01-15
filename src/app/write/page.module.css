@@ -1,0 +1,29 @@
+.container{
+    /* display: flex;
+    flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+.editor{
+    display: flex;
+    gap: 20px;
+    height: 700px;
+}
+.story{
+    width: 100%;
+    margin-top: 20px;
+}
+.button , .addbutton{
+    
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--textColor);
+    justify-content: center;
+    align-items: center;
+    display: flex !important;
+    flex-direction: row;
+
+}

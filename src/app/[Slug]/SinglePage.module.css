@@ -1,5 +1,5 @@
-.conatiner{
-}
+/* .conatiner{
+} */
 
 .infoconatiner{
     display: flex;
@@ -9,15 +9,16 @@
 
 .textcontainer{
     flex: 1;
-    width: max-content;
+    width: 500px;
 }   
 
 .imgcontainer{
     flex: 1;
-    height: 350px;
-    width: 350px;
-    position: relative;
-    
+    height: 130px;
+    width: 200px;
+    position: absolute;
+    margin-left: 600px;
+    top: 15vh;
 }
 .image{
     object-fit: cover;
@@ -29,7 +30,67 @@
 }
 .usertextcontainer{
     width: max-content;
+    background-color: var(--primary);
 }
 .user{
-    width: max-content;
+    width: 200px;
+}
+.title{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.post{
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    flex: 5;
+}
+.description p{
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.content{
+    flex: 1;
+    width: 75%;
+}
+@media screen and (max-width:1024px){
+    .description{
+        font-size: 14px;
+    }
+    .description h2{
+        font-size: 16px;
+    }
+    .textcontainer h1{
+        font-size: 20px;
+    }
+
+}
+@media screen and (max-width:768px){
+    .description{
+        font-size: 14px;
+    }
+    .description h2{
+        font-size: 16px;
+    }
+    .textcontainer h1{
+        font-size: 20px;
+    }
+    .imgcontainer{
+        display: none;
+    }
+}
+@media screen and (max-width:628px){
+    .description{
+        font-size: 12px;
+    }
+    .description h2{
+        font-size: 14px;
+        width: 90%;
+    }
+    .textcontainer{
+        width:75%;
+    }
+
 }
