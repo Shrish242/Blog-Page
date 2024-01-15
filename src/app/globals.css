@@ -92,5 +92,5 @@ a{
 }
 
 .quill > .ql-container > .ql-editor.ql-blank::before{
-  color: #f5f5f5;
+  color: var(--softtextcolor)
 } 

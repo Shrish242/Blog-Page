@@ -15,11 +15,11 @@ const page = () => {
     const [open , setopen] = useState(false)
     const [value, setValue] = useState('');
   return (
-    <div className={styles.container}>page
-    <input type="text" placeholder='Title' />
+    <div className={styles.container}>
+    <input type="text" placeholder='Title' className={styles.title} />
     <div className={styles.editor}>
         <button className={styles.button}>
-        <Image src={add1}  width={16} height={16} onClick={() => {setopen(!open)}}/>
+        <Image src={add1}  width={50} height={50} onClick={() => {setopen(!open)}}/>
         </button>
         {
             open && (
@@ -38,6 +38,7 @@ const page = () => {
         }
         <ReactQuill theme="bubble" value={value} onChange={setValue} className={styles.story} placeholder="Please tell your story"/>
     </div>
+    <button className={styles.publish}>Publish</button>
     </div>
   )
 }
